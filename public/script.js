@@ -307,7 +307,7 @@ async function registerVisit() {
 
     const session_id = getSessionId(); // Burada session_id oluşturuluyor
 
-    await fetch("/visit", {
+    await fetch("visit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -325,6 +325,7 @@ async function registerVisit() {
 }
 
 window.addEventListener("DOMContentLoaded", registerVisit);
+
 
 
 
