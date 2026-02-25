@@ -103,7 +103,7 @@ function safeStopRecognition() { if (recognition && recognitionActive) { try { r
 ====================== */
 function handleVoiceCommand(transcript) {
   const normalized = normalizeText(transcript);
-  if (normalized === "DİNGİL") {
+  if (normalized === "PENCİZURNA") {
     speak("PURNA algılandı. Tekrar okunuyor.", () => repeatQuestion());
     return;
   }
