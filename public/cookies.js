@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(`Toplam ziyaretçi sayısı: ${visitors}`);
 
   const consent = getCookie("cookieConsent") === "true";
-
+totalCount.innerHTML = `<p>Toplam Ziyaretçi Sayısı: ${visitors}</p>`;
   if (consent) {
     sendVisit(true); // onaylıysa hemen kaydet
     return;
@@ -80,3 +80,4 @@ document.addEventListener("DOMContentLoaded", () => {
     sendVisit(true); // onay sonrası kaydet
   };
 });
+
