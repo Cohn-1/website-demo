@@ -7,7 +7,7 @@ function setCookie(name, value, days) {
   }
   document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
 }
-
+const totalCount = document.getElementById("total-visitor-count");
 function getCookie(name) {
   const cookies = document.cookie.split("; ");
   for (const c of cookies) {
@@ -80,4 +80,5 @@ totalCount.innerHTML = `<p>Toplam Ziyaretçi Sayısı: ${visitors}</p>`;
     sendVisit(true); // onay sonrası kaydet
   };
 });
+
 
